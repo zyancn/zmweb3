@@ -2,6 +2,8 @@
 
 基于React和Vite构建的Web3项目，支持Arbitrum网络上的USDT支付验证。
 
+官方网站：[zmweb3.com](https://zmweb3.com)
+
 ## 环境变量配置
 
 项目使用`.env`文件进行配置，支持以下环境变量：
