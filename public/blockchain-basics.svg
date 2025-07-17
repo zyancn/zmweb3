@@ -1,0 +1,32 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="200" height="200" rx="10" fill="#F0F9FF" />
+  
+  <!-- 区块链图形 -->
+  <g transform="translate(40, 50)">
+    <!-- 区块1 -->
+    <rect x="0" y="0" width="40" height="40" rx="5" fill="#3498DB" />
+    <text x="20" y="25" font-family="Arial" font-size="16" fill="white" text-anchor="middle">1</text>
+    
+    <!-- 区块2 -->
+    <rect x="60" y="0" width="40" height="40" rx="5" fill="#3498DB" />
+    <text x="80" y="25" font-family="Arial" font-size="16" fill="white" text-anchor="middle">2</text>
+    
+    <!-- 区块3 -->
+    <rect x="120" y="0" width="40" height="40" rx="5" fill="#3498DB" />
+    <text x="140" y="25" font-family="Arial" font-size="16" fill="white" text-anchor="middle">3</text>
+    
+    <!-- 连接线 -->
+    <line x1="40" y1="20" x2="60" y2="20" stroke="#2980B9" stroke-width="3" />
+    <line x1="100" y1="20" x2="120" y2="20" stroke="#2980B9" stroke-width="3" />
+    
+    <!-- 二进制数据 -->
+    <text x="20" y="70" font-family="Courier" font-size="10" fill="#2C3E50">01001010</text>
+    <text x="80" y="70" font-family="Courier" font-size="10" fill="#2C3E50">10110101</text>
+    <text x="140" y="70" font-family="Courier" font-size="10" fill="#2C3E50">11001001</text>
+  </g>
+  
+  <!-- 标题 -->
+  <text x="100" y="150" font-family="Arial" font-size="16" font-weight="bold" fill="#2C3E50" text-anchor="middle">区块链基础</text>
+  <text x="100" y="170" font-family="Arial" font-size="12" fill="#7F8C8D" text-anchor="middle">入门教程</text>
+</svg>

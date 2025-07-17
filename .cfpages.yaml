@@ -1,0 +1,12 @@
+# Cloudflare Pages 配置文件
+
+build:
+  command: npm run build
+  output_directory: dist
+  environment:
+    NODE_VERSION: 18
+
+routes:
+  - pattern: /*
+    path: /index.html
+    status: 200

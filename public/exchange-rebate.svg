@@ -1,0 +1,29 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="200" height="200" rx="10" fill="#FFF5F5" />
+  
+  <!-- 硬币图形 -->
+  <g transform="translate(60, 50)">
+    <!-- 主硬币 -->
+    <circle cx="40" cy="40" r="35" fill="#F1C40F" stroke="#F39C12" stroke-width="2" />
+    <text x="40" y="45" font-family="Arial" font-size="16" font-weight="bold" fill="#FFF" text-anchor="middle">$</text>
+    
+    <!-- 返佣箭头 -->
+    <path d="M85,40 C100,20 100,60 85,40 L95,35 M85,40 L95,45" fill="none" stroke="#E74C3C" stroke-width="3" />
+    
+    <!-- 小硬币 -->
+    <circle cx="15" cy="15" r="12" fill="#F1C40F" stroke="#F39C12" stroke-width="1" />
+    <text x="15" y="18" font-family="Arial" font-size="10" font-weight="bold" fill="#FFF" text-anchor="middle">$</text>
+    
+    <!-- 小硬币 -->
+    <circle cx="75" cy="15" r="12" fill="#F1C40F" stroke="#F39C12" stroke-width="1" />
+    <text x="75" y="18" font-family="Arial" font-size="10" font-weight="bold" fill="#FFF" text-anchor="middle">$</text>
+    
+    <!-- 百分比符号 -->
+    <text x="40" y="90" font-family="Arial" font-size="24" font-weight="bold" fill="#E74C3C" text-anchor="middle">%</text>
+  </g>
+  
+  <!-- 标题 -->
+  <text x="100" y="150" font-family="Arial" font-size="16" font-weight="bold" fill="#2C3E50" text-anchor="middle">交易所返佣</text>
+  <text x="100" y="170" font-family="Arial" font-size="12" fill="#7F8C8D" text-anchor="middle">攻略指南</text>
+</svg>
