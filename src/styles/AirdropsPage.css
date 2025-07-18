@@ -173,9 +173,9 @@
 }
 
 .strategy-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 3rem;
   position: relative;
   z-index: 1;
@@ -200,8 +200,9 @@
   border: 1px solid rgba(126, 34, 206, 0.05);
   position: relative;
   overflow: hidden;
-  width: 100%;
-  max-width: 100%;
+  width: calc(50% - 1rem);
+  margin-bottom: 2rem;
+  box-sizing: border-box;
 }
 
 .strategy-item::before {
@@ -280,9 +281,12 @@
   }
   
   .strategy-content {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
     max-width: 90%;
+  }
+  
+  .strategy-item {
+    width: calc(50% - 0.75rem);
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -304,12 +308,12 @@
   }
   
   .strategy-content {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
     max-width: 100%;
   }
   
   .strategy-item {
+    width: 100%;
+    margin-bottom: 1.5rem;
     padding: 1.25rem;
   }
 }
