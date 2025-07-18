@@ -9,7 +9,7 @@ const featuredLinks = [
     id: 1,
     title: 'Binance 币安交易所',
     description: '全球领先的加密货币交易所，提供多种数字资产交易服务',
-    image: '/src/imges/biance.png',
+    image: '/assets/biance.png',
     link: 'https://www.binance.com/zh-CN/register?ref=YOUR_REF_CODE',
     tags: ['交易所', '热门']
   },
@@ -17,7 +17,7 @@ const featuredLinks = [
     id: 2,
     title: 'OKX 欧易交易所',
     description: '安全稳定的数字资产交易平台，支持多种加密货币交易',
-    image: '/src/imges/okx.png',
+    image: '/assets/okx.png',
     link: 'https://www.okx.com/join/YOUR_REF_CODE',
     tags: ['交易所', '推荐']
   },
@@ -74,7 +74,7 @@ const HomePage = () => {
             <div className="feature">
               <div className="feature-icon">💰</div>
               <h3>高额返佣</h3>
-              <p>通过我们的推广链接注册，获得更高的返佣比例</p>
+              <p>通过我们的立即注册按钮，获得更高的返佣比例</p>
             </div>
             <div className="feature">
               <div className="feature-icon">🛡️</div>
