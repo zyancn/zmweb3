@@ -277,11 +277,11 @@ const AirdropPanel = ({ featuredOnly = false, featuredTokens = [] }) => {
 
       <div className="airdrop-summary">
         <div className="summary-item">
-          <span className="summary-label">空投总数量:</span>
+          <span className="summary-label">单账号空投总数量:</span>
           <span className="summary-value">{Object.keys(AIRDROPS).length} 种代币</span>
         </div>
         <div className="summary-item">
-          <span className="summary-label">估计总价值:</span>
+          <span className="summary-label">单账号估计总价值:</span>
           <span className="summary-value highlight">{formatPrice(calculateTotalValue())}</span>
         </div>
       </div>
