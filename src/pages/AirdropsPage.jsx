@@ -4,6 +4,7 @@ import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 import '../styles/AirdropsPage.css';
 
 const AirdropsPage = () => {
+  
   useEffect(() => {
     // 确保页面滚动到顶部
     window.scrollTo(0, 0);
@@ -12,18 +13,24 @@ const AirdropsPage = () => {
     document.title = '空投战绩 - ZMWeb3';
   }, []);
   
+  // 阻止事件冒泡，确保导航链接可点击
+  const handleClick = (e) => {
+    // 阻止事件冒泡
+    e.stopPropagation();
+  };
+  
   return (
-    <div className="airdrops-page">
+    <div className="airdrops-page" onClick={handleClick}>
       <ScrollToTopOnMount />
-      <div className="airdrops-hero">
-        <div className="container">
+      <div className="airdrops-hero" onClick={handleClick}>
+        <div className="container" onClick={handleClick}>
           <h1>我的空投战绩</h1>
           <p>查看我参与过的所有空投项目及收益详情</p>
         </div>
       </div>
       
-      <section className="airdrops-content">
-        <div className="container">
+      <section className="airdrops-content" onClick={handleClick}>
+        <div className="container" onClick={handleClick}>
           <div className="airdrops-description">
             <h2>空投收获记录</h2>
             <p>

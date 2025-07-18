@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
@@ -45,12 +45,15 @@ function ScrollToTop() {
   
   // 使用 useEffect 直接在这里处理，确保每次路由变化时滚动到顶部
   React.useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'auto'
-    });
-    console.log('ScrollToTop component triggered for:', location.pathname);
+    // 使用setTimeout确保DOM已经完全渲染
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto'
+      });
+      console.log('ScrollToTop component triggered for:', location.pathname);
+    }, 0);
   }, [location]);
   
   // 同时也使用自定义钩子作为备份

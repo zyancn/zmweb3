@@ -3,55 +3,36 @@ import LinkCard from '../components/LinkCard';
 import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 import '../styles/UCardsPage.css';
 
-// 示例数据
+// 导入U卡图片
+import bybitCard from '../assets/card/bybit.png';
+import safepalCard from '../assets/card/safepal.png';
+import yptCard from '../assets/card/ypt.png';
+
+// U卡数据
 const ucards = [
   {
     id: 1,
-    title: 'Depay 虚拟信用卡',
-    description: '全球领先的加密支付解决方案，支持多种加密货币支付。Depay提供虚拟Visa卡，可用于全球在线消费，支持多种加密货币充值。',
-    image: '/src/assets/images/visa.svg',
-    link: 'https://depay.one/zh-cn/register?inviteCode=YOUR_CODE',
-    tags: ['U卡', '热门', 'Visa']
+    title: 'Bybit Card',
+    description: 'Bybit交易所推出的虚拟信用卡，支持多种加密货币充值，全球消费。提供便捷的加密货币支付体验和丰厚的返现福利。',
+    image: bybitCard,
+    link: 'https://www.bybitglobal.com/cards/?ref=ZV2202&source=applet_invite',
+    tags: ['U卡', '热门', 'MasterCard']
   },
   {
     id: 2,
-    title: 'OneKey Card',
-    description: '由OneKey钱包推出的虚拟信用卡服务，安全可靠，支持多种加密货币充值。OneKey Card与多家知名交易所合作，提供便捷的加密货币支付体验。',
-    image: '/src/assets/images/visa.svg',
-    link: 'https://card.onekey.so/?ref=YOUR_REF_CODE',
-    tags: ['U卡', '安全', 'Visa']
+    title: 'SafePal Card',
+    description: '由SafePal钱包推出的虚拟信用卡服务，安全可靠，支持多种加密货币充值。与多家知名交易所合作，提供便捷的加密货币支付体验。',
+    image: safepalCard,
+    link: 'https://www.safepal.com/bank/register?referral=809130',
+    tags: ['U卡', '安全', 'MasterCard']
   },
   {
     id: 3,
-    title: 'Alchemy Pay 虚拟卡',
-    description: '连接加密货币和传统金融的桥梁，提供虚拟信用卡服务。Alchemy Pay支持多种加密货币和法币支付，为用户提供全球支付解决方案。',
-    image: '/src/assets/images/mastercard.svg',
-    link: 'https://www.alchemypay.org/?ref=YOUR_REF_CODE',
-    tags: ['U卡', 'MasterCard']
-  },
-  {
-    id: 4,
-    title: 'Crypto.com Visa卡',
-    description: '知名加密货币平台Crypto.com推出的实体Visa卡，提供多级别卡片选择和丰厚的返现福利。Crypto.com Visa卡支持全球ATM取款和消费。',
-    image: '/src/assets/images/visa.svg',
-    link: 'https://crypto.com/app/YOUR_REF_CODE',
-    tags: ['U卡', '实体卡', 'Visa']
-  },
-  {
-    id: 5,
-    title: 'Binance Card',
-    description: '币安交易所推出的虚拟和实体卡服务，支持多种加密货币支付和全球消费。Binance Card提供高达8%的消费返现，是加密货币持有者的理想选择。',
-    image: '/src/assets/images/visa.svg',
-    link: 'https://www.binance.com/zh-CN/cards/YOUR_REF_CODE',
-    tags: ['U卡', 'Visa', '返现']
-  },
-  {
-    id: 6,
-    title: 'Wirex Card',
-    description: '老牌加密支付解决方案，提供虚拟和实体卡服务，支持多种加密货币和法币。Wirex Card在全球范围内广受欢迎，提供多币种账户和即时兑换功能。',
-    image: '/src/assets/images/mastercard.svg',
-    link: 'https://wirexapp.com/r/YOUR_REF_CODE',
-    tags: ['U卡', 'MasterCard', '多币种']
+    title: 'YPT Card',
+    description: 'YPT提供的虚拟信用卡服务，支持多种加密货币和法币支付，为用户提供全球支付解决方案。安全便捷，全球适用。',
+    image: yptCard,
+    link: 'https://d.ypt.com?code=xA6lkM',
+    tags: ['U卡', 'Visa', '全球适用']
   }
 ];
 
@@ -61,7 +42,7 @@ const UCardsPage = () => {
     window.scrollTo(0, 0);
     
     // 设置页面标题
-    document.title = 'U卡推广 - ZMWeb3';
+    document.title = 'U卡推荐 - ZMWeb3';
   }, []);
   
   return (
@@ -69,8 +50,8 @@ const UCardsPage = () => {
       <ScrollToTopOnMount />
       <div className="page-header">
         <div className="container">
-          <h1>U卡推广</h1>
-          <p>我们精选了市场上最优质的加密货币支付卡，为您提供高质量的推广链接</p>
+          <h1>U卡推荐</h1>
+          <p>我们精选了市场上最优质的加密货币支付卡，为您提供更好的数字资产消费渠道</p>
         </div>
       </div>
       

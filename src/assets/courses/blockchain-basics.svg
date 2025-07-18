@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <style>
+    .block {
+      fill: #3498db;
+      stroke: #2980b9;
+      stroke-width: 2;
+    }
+    .chain {
+      fill: none;
+      stroke: #2c3e50;
+      stroke-width: 4;
+      stroke-linecap: round;
+    }
+    .data {
+      fill: #ecf0f1;
+      font-family: monospace;
+      font-size: 10px;
+    }
+  </style>
+  
+  <!-- 区块1 -->
+  <rect class="block" x="30" y="40" width="50" height="50" rx="5" />
+  <text class="data" x="40" y="65">BLOCK 1</text>
+  <text class="data" x="40" y="80">HASH: A7F</text>
+  
+  <!-- 区块2 -->
+  <rect class="block" x="75" y="75" width="50" height="50" rx="5" />
+  <text class="data" x="85" y="100">BLOCK 2</text>
+  <text class="data" x="85" y="115">HASH: B3D</text>
+  
+  <!-- 区块3 -->
+  <rect class="block" x="120" y="110" width="50" height="50" rx="5" />
+  <text class="data" x="130" y="135">BLOCK 3</text>
+  <text class="data" x="130" y="150">HASH: C9E</text>
+  
+  <!-- 链接线 -->
+  <path class="chain" d="M80 65 L75 75" />
+  <path class="chain" d="M125 100 L120 110" />
+  
+  <!-- 标题 -->
+  <text x="50" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">区块链入门教程</text>
+</svg>

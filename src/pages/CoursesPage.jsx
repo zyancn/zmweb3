@@ -4,6 +4,11 @@ import { ethers } from 'ethers';
 import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 import '../styles/CoursesPage.css';
 
+// 导入课程图片
+import blockchainBasicsIcon from '../assets/courses/blockchain-basics.svg';
+import airdropGuideIcon from '../assets/courses/airdrop-guide.svg';
+import techServiceIcon from '../assets/courses/tech-service.svg';
+
 // 从环境变量获取Arbitrum网络RPC节点
 const RPC_URL = import.meta.env.VITE_RPC_URL || 'https://arb1.arbitrum.io/rpc';
 console.log('DEBUG: 使用RPC节点:', RPC_URL);
@@ -73,8 +78,8 @@ const CoursesPage = () => {
       id: 1,
       title: '区块链入门教程',
       description: '从零开始学习区块链技术，掌握基础概念和应用场景',
-      price: 0.1,
-      image: '/blockchain-basics.svg',
+      price: 9.9,
+      image: blockchainBasicsIcon,
       preview: '本教程包含10个章节，从区块链基础概念到实际应用案例...',
       benefits: ['掌握区块链核心概念', '了解主流公链特点', '学习加密货币基础知识'],
       type: 'course'
@@ -83,8 +88,8 @@ const CoursesPage = () => {
       id: 2,
       title: '空投终极指南',
       description: '掌握空投活动参与技巧，最大化您的空投收益',
-      price: 0.1,
-      image: '/exchange-rebate.svg', // 暂用现有图片
+      price: 19.9,
+      image: airdropGuideIcon,
       preview: '本教程详细介绍如何寻找、参与和管理各类空投活动，提高获取空投的成功率...',
       benefits: ['了解空投活动类型', '掌握筛选优质项目技巧', '学习安全参与策略'],
       type: 'course'
@@ -93,8 +98,8 @@ const CoursesPage = () => {
       id: 3,
       title: '终身技术服务',
       description: '获得我们团队的专业技术支持，解决您在Web3领域遇到的各种问题',
-      price: 0.1,
-      image: '/web3-marketing.svg', // 暂用现有图片，实际应替换为专门的服务的图标
+      price: 99.9,
+      image: techServiceIcon,
       preview: '付款后即可获得专属客服联系方式，提供一对一技术咨询和问题解决方案...',
       benefits: ['专业技术团队支持', '快速响应各类问题', '提供个性化解决方案', '终身不限次数咨询'],
       type: 'service',

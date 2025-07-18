@@ -5,6 +5,9 @@ import AirdropPanel from '../components/AirdropPanel';
 import AlphaPanel from '../components/AlphaPanel';
 import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 
+// 导入U卡图片
+import bybitCard from '../assets/card/bybit.png';
+
 // 交易所数据
 const exchangeData = [
   {
@@ -29,10 +32,10 @@ const exchangeData = [
 const ucardData = [
   {
     id: 1,
-    title: 'Depay 虚拟信用卡',
-    description: '全球领先的加密支付解决方案，支持多种加密货币支付',
-    image: '/assets/depay.svg',
-    link: 'https://depay.one/zh-cn/register?inviteCode=YOUR_CODE',
+    title: 'Bybit 虚拟信用卡',
+    description: '全球知名交易所推出的虚拟信用卡，支持多种加密货币支付',
+    image: bybitCard,
+    link: 'https://www.bybit.com/zh-CN/register?affiliate_id=YOUR_CODE',
     features: ['无KYC', '全球支付', '多币种支持', '安全便捷']
   }
 ];

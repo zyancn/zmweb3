@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <style>
+    .gear {
+      fill: #95a5a6;
+      stroke: #7f8c8d;
+      stroke-width: 2;
+    }
+    .gear-inner {
+      fill: #bdc3c7;
+    }
+    .support {
+      fill: #3498db;
+      stroke: #2980b9;
+      stroke-width: 2;
+    }
+    .code {
+      fill: none;
+      stroke: #2c3e50;
+      stroke-width: 1.5;
+    }
+    .infinity {
+      fill: none;
+      stroke: #8e44ad;
+      stroke-width: 3;
+    }
+  </style>
+  
+  <!-- 齿轮 -->
+  <path class="gear" d="M100,50 L105,35 L115,35 L120,50 L135,45 L145,55 L135,65 L145,75 L135,85 L120,80 L115,95 L105,95 L100,80 L85,85 L75,75 L85,65 L75,55 L85,45 Z" />
+  <circle class="gear-inner" cx="100" cy="65" r="15" />
+  
+  <!-- 支持/服务图标 -->
+  <path class="support" d="M70,110 Q70,90 100,90 Q130,90 130,110 L130,130 Q130,150 100,150 Q70,150 70,130 Z" />
+  <text x="85" y="125" font-family="Arial" font-size="14" fill="white">24/7</text>
+  
+  <!-- 代码符号 -->
+  <path class="code" d="M50,100 L65,115 L50,130" />
+  <path class="code" d="M150,100 L135,115 L150,130" />
+  
+  <!-- 无限符号 (表示终身) -->
+  <path class="infinity" d="M80,170 Q65,150 80,130 Q95,150 110,130 Q125,150 110,170 Q95,150 80,170" />
+  
+  <!-- 标题 -->
+  <text x="50" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">终身技术服务</text>
+</svg>

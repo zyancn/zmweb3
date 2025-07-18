@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <style>
+    .parachute {
+      fill: #e74c3c;
+      stroke: #c0392b;
+      stroke-width: 2;
+    }
+    .strings {
+      fill: none;
+      stroke: #7f8c8d;
+      stroke-width: 1.5;
+    }
+    .box {
+      fill: #f39c12;
+      stroke: #d35400;
+      stroke-width: 2;
+    }
+    .coin {
+      fill: #f1c40f;
+      stroke: #f39c12;
+      stroke-width: 1;
+    }
+    .symbol {
+      fill: #e67e22;
+      font-family: Arial;
+      font-weight: bold;
+    }
+  </style>
+  
+  <!-- 降落伞 -->
+  <path class="parachute" d="M50,60 Q100,20 150,60" />
+  
+  <!-- 降落伞绳索 -->
+  <path class="strings" d="M60,60 L80,100" />
+  <path class="strings" d="M80,60 L90,100" />
+  <path class="strings" d="M120,60 L110,100" />
+  <path class="strings" d="M140,60 L120,100" />
+  
+  <!-- 空投箱 -->
+  <rect class="box" x="80" y="100" width="40" height="30" rx="2" />
+  
+  <!-- 空投的代币 -->
+  <circle class="coin" cx="70" cy="140" r="12" />
+  <text class="symbol" x="65" y="145">$</text>
+  
+  <circle class="coin" cx="100" cy="150" r="12" />
+  <text class="symbol" x="95" y="155">$</text>
+  
+  <circle class="coin" cx="130" cy="140" r="12" />
+  <text class="symbol" x="125" y="145">$</text>
+  
+  <!-- 标题 -->
+  <text x="50" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">空投终极指南</text>
+</svg>

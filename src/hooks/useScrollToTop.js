@@ -8,12 +8,15 @@ const useScrollToTop = () => {
   const { pathname } = useLocation();
   
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'auto'
-    });
-    console.log('Scrolled to top after navigation to:', pathname);
+    // 使用setTimeout确保DOM已经完全渲染
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto'
+      });
+      console.log('Scrolled to top after navigation to:', pathname);
+    }, 0);
   }, [pathname]);
 };
 

@@ -15,20 +15,23 @@
 }
 
 .link-card-image {
-  height: 150px;
+  height: 180px;
   overflow: hidden;
+  background-color: #2563eb;
+  padding: 0;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2563eb;
-  padding: 1.25rem;
 }
 
 .link-card-image img {
   max-width: 80%;
   max-height: 80%;
   object-fit: contain;
-  filter: brightness(0) invert(1);
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .link-card-content {
@@ -88,7 +91,7 @@
 /* 响应式设计 */
 @media (max-width: 768px) {
   .link-card-image {
-    height: 150px;
+    height: 180px;
   }
   
   .link-card-content {

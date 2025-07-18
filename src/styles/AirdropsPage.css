@@ -2,6 +2,8 @@
   font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   color: #1f2937;
   background-color: #f9fafb;
+  position: relative;
+  z-index: auto;
 }
 
 /* 英雄区域 */
@@ -12,7 +14,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: auto;
 }
 
 .airdrops-hero::before {
@@ -25,7 +27,8 @@
   background: url('/assets/hero-image.svg') no-repeat center center;
   background-size: cover;
   opacity: 0.1;
-  z-index: 0;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .airdrops-hero h1 {
@@ -34,7 +37,7 @@
   margin-bottom: 1.5rem;
   color: white;
   position: relative;
-  z-index: 1;
+  z-index: auto;
   background: linear-gradient(90deg, #ffffff, #a78bfa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -47,7 +50,7 @@
   max-width: 800px;
   margin: 0 auto;
   position: relative;
-  z-index: 1;
+  z-index: auto;
   line-height: 1.6;
 }
 
@@ -57,7 +60,7 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  z-index: 1;
+  z-index: auto;
 }
 
 .container {
@@ -65,7 +68,7 @@
   margin: 0 auto;
   padding: 0 2rem;
   position: relative;
-  z-index: 1;
+  z-index: auto;
 }
 
 .airdrops-description {
@@ -122,7 +125,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  z-index: 1;
+  z-index: auto;
 }
 
 .airdrops-strategy::before {
@@ -134,7 +137,7 @@
   height: 300px;
   background: radial-gradient(circle, rgba(126, 34, 206, 0.05) 0%, rgba(126, 34, 206, 0) 70%);
   border-radius: 50%;
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
 }
 
@@ -147,7 +150,7 @@
   height: 300px;
   background: radial-gradient(circle, rgba(126, 34, 206, 0.05) 0%, rgba(126, 34, 206, 0) 70%);
   border-radius: 50%;
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
 }
 
@@ -178,7 +181,7 @@
   justify-content: space-between;
   margin-top: 3rem;
   position: relative;
-  z-index: 1;
+  z-index: auto;
   width: 100%;
   max-width: 1000px;
   margin-left: auto;

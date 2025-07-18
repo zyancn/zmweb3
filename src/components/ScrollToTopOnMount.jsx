@@ -9,13 +9,16 @@ const ScrollToTopOnMount = () => {
   const { pathname } = useLocation();
   
   useEffect(() => {
-    // 使用更明确的滚动方法
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'auto' // 使用 'auto' 而不是 'smooth' 以确保立即滚动
-    });
-    console.log('ScrollToTopOnMount: Scrolled to top for path:', pathname);
+    // 使用setTimeout确保DOM已经完全渲染
+    setTimeout(() => {
+      // 使用更明确的滚动方法
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto' // 使用 'auto' 而不是 'smooth' 以确保立即滚动
+      });
+      console.log('ScrollToTopOnMount: Scrolled to top for path:', pathname);
+    }, 0);
   }, [pathname]);
 
   return null; // 这个组件不渲染任何内容
