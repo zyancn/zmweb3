@@ -9,7 +9,7 @@ const exchanges = [
     title: 'Binance 币安交易所',
     description: '全球领先的加密货币交易所，提供多种数字资产交易服务。币安提供了丰富的交易对和低廉的交易费用，是全球用户量最大的加密货币交易平台之一。',
     image: '/assets/biance.png',
-    link: 'https://www.binance.com/zh-CN/register?ref=YOUR_REF_CODE',
+    link: 'https://www.marketwebb.ninja/activity/referral-entry/CPA?ref=CPA_00EPKUBRBY',
     tags: ['交易所', '热门', '现货', '合约']
   },
   {
@@ -17,7 +17,7 @@ const exchanges = [
     title: 'OKX 欧易交易所',
     description: '安全稳定的数字资产交易平台，支持多种加密货币交易。OKX提供现货、合约、杠杆等多种交易方式，界面友好，适合各类交易者使用。',
     image: '/assets/okx.png',
-    link: 'https://www.okx.com/join/YOUR_REF_CODE',
+    link: 'https://oyicn.link/ul/YbU25D?channelId=7151751',
     tags: ['交易所', '推荐', '现货', '合约']
   },
   {
@@ -25,7 +25,7 @@ const exchanges = [
     title: 'Gate.io 芝麻开门',
     description: '老牌加密货币交易所，支持多种小众币种交易。Gate.io以上线小众优质币种而闻名，为用户提供多样化的投资选择。',
     image: '/src/assets/images/gate.svg',
-    link: 'https://www.gate.io/signup/YOUR_REF_CODE',
+    link: 'https://www.gatewebsite.com/signup/A1VAXQwM?ref_type=103',
     tags: ['交易所', '小众币']
   },
   {
@@ -33,7 +33,7 @@ const exchanges = [
     title: 'Bybit 交易所',
     description: '专注于加密货币衍生品交易的平台，提供高达100倍杠杆的永续合约交易。Bybit以其稳定的交易引擎和用户友好的界面受到合约交易者的欢迎。',
     image: '/assets/bybit.svg',
-    link: 'https://www.bybit.com/zh-CN/register?affiliate_id=YOUR_REF_CODE',
+    link: 'https://www.bybitglobal.com/invite?ref=ZV2202',
     tags: ['交易所', '合约', '杠杆']
   },
   {
@@ -41,7 +41,7 @@ const exchanges = [
     title: 'Bitget 交易所',
     description: '创新型加密货币交易平台，提供现货、合约和社交交易功能。Bitget的社交交易功能允许用户跟随顶级交易者的策略进行交易。',
     image: '/src/assets/images/bitget.svg',
-    link: 'https://www.bitget.com/zh-CN/register?inviteCode=YOUR_REF_CODE',
+    link: 'https://share.glassgs.com/u/7HY6TBVB',
     tags: ['交易所', '社交交易']
   },
   {
