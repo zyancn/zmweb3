@@ -175,7 +175,7 @@
 .strategy-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
   margin-top: 3rem;
   position: relative;
   z-index: 1;
@@ -234,6 +234,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .strategy-item h3::before {
@@ -265,6 +266,7 @@
   font-size: 1rem;
   margin-bottom: 0;
   padding-left: 45px;
+  word-break: break-word;
 }
 
 /* 响应式样式 */
@@ -279,6 +281,8 @@
   
   .strategy-content {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 90%;
   }
 }
 
@@ -301,5 +305,11 @@
   
   .strategy-content {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 100%;
+  }
+  
+  .strategy-item {
+    padding: 1.25rem;
   }
 }
