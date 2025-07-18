@@ -175,11 +175,14 @@
 .strategy-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
-  margin-top: 4rem;
+  gap: 1.5rem;
+  margin-top: 3rem;
   position: relative;
   z-index: 1;
   width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {
@@ -190,7 +193,7 @@
 
 .strategy-item {
   background-color: white;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
   transition: all 0.3s ease;
@@ -198,6 +201,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  max-width: 100%;
 }
 
 .strategy-item::before {
@@ -223,9 +227,9 @@
 }
 
 .strategy-item h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: #4a2a7a;
   position: relative;
   display: flex;
@@ -257,8 +261,8 @@
 
 .strategy-item p {
   color: #4b5563;
-  line-height: 1.8;
-  font-size: 1.1rem;
+  line-height: 1.6;
+  font-size: 1rem;
   margin-bottom: 0;
   padding-left: 45px;
 }
