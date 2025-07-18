@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <h3>ZMWeb3</h3>
-            <p>优质项目推广链接平台，提供交易所、U卡等多种项目的推荐</p>
+            <p>优质项目推荐平台，提供交易所、U卡等多种项目的推荐</p>
           </div>
           
           <div className="footer-section">
