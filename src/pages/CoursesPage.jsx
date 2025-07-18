@@ -765,7 +765,10 @@ const CoursesPage = () => {
                           onChange={(e) => setTransactionId(e.target.value)}
                           placeholder="输入Arbitrum网络USDT转账交易ID"
                         />
-                        <div className="txid-help">Arbitrum网络交易哈希值(0x开头)</div>
+                        <div className="txid-help">
+                          Arbitrum网络交易哈希值(0x开头) 
+                          <a href="/article/97932" target="_blank" className="txid-article-link">不知道如何查找TXID？点击这里查看教程</a>
+                        </div>
                       </div>
                       <p className="payment-note">转账完成后输入交易ID并点击"验证支付"按钮，系统将自动验证并发送教程至您的邮箱</p>
                       <div className="payment-restrictions">

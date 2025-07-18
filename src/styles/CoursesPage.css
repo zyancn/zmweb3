@@ -477,6 +477,20 @@
   border-left: 2px solid #3498db;
 }
 
+.txid-article-link {
+  display: block;
+  margin-top: 0.3rem;
+  color: #1a73e8;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.txid-article-link:hover {
+  color: #0d47a1;
+  text-decoration: underline;
+}
+
 .payment-actions {
   display: flex;
   justify-content: flex-end;
