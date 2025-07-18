@@ -16,7 +16,7 @@ const LinkCard = ({ title, description, link, image, tags }) => {
           ))}
         </div>
         <a href={link} target="_blank" rel="noopener noreferrer" className="promo-link">
-          获取推广链接
+          立即注册
         </a>
       </div>
     </div>
