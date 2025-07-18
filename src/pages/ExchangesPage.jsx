@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import LinkCard from '../components/LinkCard';
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 import '../styles/ExchangesPage.css';
 
 // 示例数据
@@ -55,8 +56,17 @@ const exchanges = [
 ];
 
 const ExchangesPage = () => {
+  useEffect(() => {
+    // 确保页面滚动到顶部
+    window.scrollTo(0, 0);
+    
+    // 设置页面标题
+    document.title = '交易所推广 - ZMWeb3';
+  }, []);
+  
   return (
     <div className="exchanges-page">
+      <ScrollToTopOnMount />
       <div className="page-header">
         <div className="container">
           <h1>交易所推广</h1>

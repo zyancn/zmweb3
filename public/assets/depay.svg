@@ -1,0 +1,36 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="200" height="200" rx="20" fill="#F8FAFC" />
+  
+  <!-- 信用卡图形 -->
+  <rect x="40" y="60" width="120" height="80" rx="10" fill="#1F2937" />
+  
+  <!-- 卡片芯片 -->
+  <rect x="60" y="80" width="25" height="20" rx="3" fill="#F0B90B" />
+  
+  <!-- 卡号 -->
+  <rect x="60" y="110" width="15" height="4" rx="2" fill="white" />
+  <rect x="80" y="110" width="15" height="4" rx="2" fill="white" />
+  <rect x="100" y="110" width="15" height="4" rx="2" fill="white" />
+  <rect x="120" y="110" width="15" height="4" rx="2" fill="white" />
+  
+  <!-- 加密货币符号 -->
+  <circle cx="140" cy="80" r="12" fill="#F0B90B" />
+  <path d="M140 72L145 77L140 82L135 77L140 72Z" fill="white" />
+  
+  <!-- 装饰元素 -->
+  <circle cx="50" cy="50" r="20" fill="#F0B90B" opacity="0.1" />
+  <circle cx="150" cy="150" r="25" fill="#F0B90B" opacity="0.1" />
+  
+  <!-- DePay文字 -->
+  <path d="M60 150H70C75.5 150 80 145.5 80 140C80 134.5 75.5 130 70 130H60V150Z" fill="#1F2937" />
+  <rect x="65" y="135" width="10" height="10" rx="5" fill="#F8FAFC" />
+  
+  <path d="M85 130V150H90V143H95C100.5 143 105 138.5 105 136.5C105 134.5 100.5 130 95 130H85Z" fill="#1F2937" />
+  <rect x="90" y="135" width="10" height="5" rx="2.5" fill="#F8FAFC" />
+  
+  <path d="M110 130V150H115V143H120L125 150H131L125 142C128 141 130 138.5 130 135.5C130 132.5 127.5 130 123 130H110Z" fill="#1F2937" />
+  <rect x="115" y="135" width="10" height="5" rx="2.5" fill="#F8FAFC" />
+  
+  <path d="M135 130V150H140V143L150 150H155V130H150V137L140 130H135Z" fill="#1F2937" />
+</svg>

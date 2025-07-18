@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 import '../styles/AboutPage.css';
 
 const AboutPage = () => {
+  useEffect(() => {
+    // 确保页面滚动到顶部
+    window.scrollTo(0, 0);
+    
+    // 设置页面标题
+    document.title = '关于我们 - ZMWeb3';
+  }, []);
+  
   return (
     <div className="about-page">
+      <ScrollToTopOnMount />
       <div className="page-header">
         <div className="container">
           <h1>关于我们</h1>

@@ -7,6 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
+        
         <div className="footer-content">
           <div className="footer-section">
             <h3>ZMWeb3</h3>
@@ -19,6 +20,7 @@ const Footer = () => {
               <li><Link to="/">首页</Link></li>
               <li><Link to="/exchanges">交易所</Link></li>
               <li><Link to="/ucards">U卡推广</Link></li>
+              <li><Link to="/articles">文章</Link></li>
               <li><Link to="/about">关于我们</Link></li>
             </ul>
           </div>

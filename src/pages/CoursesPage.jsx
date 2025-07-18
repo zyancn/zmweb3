@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 import { ethers } from 'ethers';
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 import '../styles/CoursesPage.css';
 
 // 从环境变量获取Arbitrum网络RPC节点
@@ -56,6 +57,15 @@ const CoursesPage = () => {
   const [verificationAttempts, setVerificationAttempts] = useState(0);
   const [orderNumber, setOrderNumber] = useState('');
   const [exactAmount, setExactAmount] = useState(0); // 存储随机生成的精确金额
+  
+  // 页面加载时滚动到顶部并设置页面标题
+  useEffect(() => {
+    // 确保页面滚动到顶部
+    window.scrollTo(0, 0);
+    
+    // 设置页面标题
+    document.title = '精选教程与技术服务 - ZMWeb3';
+  }, []);
   
   // 模拟课程数据
   const courses = [
@@ -642,6 +652,7 @@ const CoursesPage = () => {
 
   return (
     <div className="courses-page">
+      <ScrollToTopOnMount />
       <div className="container">
         <div className="courses-header">
           <h1>精选教程与技术服务</h1>

@@ -15,13 +15,13 @@
 }
 
 .link-card-image {
-  height: 180px;
+  height: 150px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1f2937;
-  padding: 1.5rem;
+  background-color: #2563eb;
+  padding: 1.25rem;
 }
 
 .link-card-image img {
@@ -32,24 +32,25 @@
 }
 
 .link-card-content {
-  padding: 1.5rem;
+  padding: 1.25rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
 .link-card-content h3 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   color: #1f2937;
 }
 
 .link-card-content p {
   color: #4b5563;
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
+  margin-bottom: 1rem;
+  line-height: 1.4;
   flex-grow: 1;
+  font-size: 0.9rem;
 }
 
 .link-card-tags {

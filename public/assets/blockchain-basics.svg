@@ -1,0 +1,40 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="100" cy="100" r="90" fill="#F8FAFC" />
+  
+  <!-- 区块链图形 -->
+  <rect x="50" y="60" width="40" height="30" rx="4" fill="#F0B90B" />
+  <rect x="110" y="60" width="40" height="30" rx="4" fill="#F0B90B" />
+  <rect x="50" y="110" width="40" height="30" rx="4" fill="#F0B90B" />
+  <rect x="110" y="110" width="40" height="30" rx="4" fill="#F0B90B" />
+  
+  <!-- 连接线 -->
+  <line x1="90" y1="75" x2="110" y2="75" stroke="#1F2937" stroke-width="2" />
+  <line x1="70" y1="90" x2="70" y2="110" stroke="#1F2937" stroke-width="2" />
+  <line x1="130" y1="90" x2="130" y2="110" stroke="#1F2937" stroke-width="2" />
+  <line x1="90" y1="125" x2="110" y2="125" stroke="#1F2937" stroke-width="2" />
+  
+  <!-- 区块内部图案 -->
+  <rect x="60" y="70" width="20" height="3" rx="1.5" fill="white" />
+  <rect x="60" y="77" width="20" height="3" rx="1.5" fill="white" />
+  
+  <rect x="120" y="70" width="20" height="3" rx="1.5" fill="white" />
+  <rect x="120" y="77" width="20" height="3" rx="1.5" fill="white" />
+  
+  <rect x="60" y="120" width="20" height="3" rx="1.5" fill="white" />
+  <rect x="60" y="127" width="20" height="3" rx="1.5" fill="white" />
+  
+  <rect x="120" y="120" width="20" height="3" rx="1.5" fill="white" />
+  <rect x="120" y="127" width="20" height="3" rx="1.5" fill="white" />
+  
+  <!-- 装饰元素 -->
+  <circle cx="40" cy="40" r="5" fill="#F0B90B" opacity="0.5" />
+  <circle cx="160" cy="40" r="5" fill="#F0B90B" opacity="0.5" />
+  <circle cx="40" cy="160" r="5" fill="#F0B90B" opacity="0.5" />
+  <circle cx="160" cy="160" r="5" fill="#F0B90B" opacity="0.5" />
+  
+  <!-- 书本图标 -->
+  <path d="M100 30C100 30 85 35 70 35C55 35 40 30 40 30V45C40 45 55 50 70 50C85 50 100 45 100 45V30Z" fill="#1F2937" />
+  <path d="M100 30C100 30 115 35 130 35C145 35 160 30 160 30V45C160 45 145 50 130 50C115 50 100 45 100 45V30Z" fill="#1F2937" />
+  <rect x="98" y="30" width="4" height="15" fill="#1F2937" />
+</svg>

@@ -50,6 +50,22 @@
   color: #3b82f6;
 }
 
+.nav a.active {
+  color: #3b82f6;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3b82f6;
+}
+
 /* 响应式设计 */
 @media (max-width: 768px) {
   .header .container {

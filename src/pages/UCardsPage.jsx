@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import LinkCard from '../components/LinkCard';
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 import '../styles/UCardsPage.css';
 
 // 示例数据
@@ -55,8 +56,17 @@ const ucards = [
 ];
 
 const UCardsPage = () => {
+  useEffect(() => {
+    // 确保页面滚动到顶部
+    window.scrollTo(0, 0);
+    
+    // 设置页面标题
+    document.title = 'U卡推广 - ZMWeb3';
+  }, []);
+  
   return (
     <div className="ucards-page">
+      <ScrollToTopOnMount />
       <div className="page-header">
         <div className="container">
           <h1>U卡推广</h1>

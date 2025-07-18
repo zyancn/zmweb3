@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../styles/Header.css';
 
 const Header = () => {
@@ -6,15 +6,17 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <Link to="/">ZMWeb3</Link>
+          <NavLink to="/">ZMWeb3</NavLink>
         </div>
         <nav className="nav">
           <ul>
-            <li><Link to="/">首页</Link></li>
-            <li><Link to="/exchanges">交易所</Link></li>
-            <li><Link to="/ucards">U卡推广</Link></li>
-            <li><Link to="/courses">教程资料</Link></li>
-            <li><Link to="/about">关于我们</Link></li>
+            <li><NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>首页</NavLink></li>
+            <li><NavLink to="/airdrops" className={({ isActive }) => isActive ? 'active' : ''}>空投战绩</NavLink></li>
+            <li><NavLink to="/exchanges" className={({ isActive }) => isActive ? 'active' : ''}>交易所</NavLink></li>
+            <li><NavLink to="/ucards" className={({ isActive }) => isActive ? 'active' : ''}>U卡推广</NavLink></li>
+            <li><NavLink to="/courses" className={({ isActive }) => isActive ? 'active' : ''}>教程资料</NavLink></li>
+            <li><NavLink to="/articles" className={({ isActive }) => isActive ? 'active' : ''}>文章</NavLink></li>
+            <li><NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>关于我们</NavLink></li>
           </ul>
         </nav>
       </div>

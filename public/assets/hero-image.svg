@@ -1,0 +1,29 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="400" cy="300" r="250" fill="#F0F9FF" />
+  
+  <!-- 币安Logo风格元素 -->
+  <path d="M400 150L450 200L400 250L350 200L400 150Z" fill="#F0B90B" />
+  <path d="M300 250L350 300L300 350L250 300L300 250Z" fill="#F0B90B" />
+  <path d="M500 250L550 300L500 350L450 300L500 250Z" fill="#F0B90B" />
+  <path d="M400 350L450 400L400 450L350 400L400 350Z" fill="#F0B90B" />
+  
+  <!-- 连接线 -->
+  <line x1="400" y1="250" x2="400" y2="350" stroke="#F0B90B" stroke-width="6" />
+  <line x1="350" y1="300" x2="450" y2="300" stroke="#F0B90B" stroke-width="6" />
+  
+  <!-- 装饰元素 -->
+  <circle cx="200" cy="150" r="20" fill="#E2E8F0" />
+  <circle cx="600" cy="450" r="30" fill="#E2E8F0" />
+  <circle cx="150" cy="400" r="15" fill="#E2E8F0" />
+  <circle cx="650" cy="200" r="25" fill="#E2E8F0" />
+  
+  <!-- 波浪装饰 -->
+  <path d="M100,500 Q150,450 200,500 Q250,550 300,500 Q350,450 400,500 Q450,550 500,500 Q550,450 600,500 Q650,550 700,500" stroke="#E2E8F0" stroke-width="10" fill="none" />
+  
+  <!-- 小方块装饰 -->
+  <rect x="180" y="220" width="15" height="15" fill="#F0B90B" transform="rotate(45 180 220)" />
+  <rect x="620" y="320" width="15" height="15" fill="#F0B90B" transform="rotate(45 620 320)" />
+  <rect x="520" y="180" width="10" height="10" fill="#F0B90B" transform="rotate(45 520 180)" />
+  <rect x="280" y="420" width="10" height="10" fill="#F0B90B" transform="rotate(45 280 420)" />
+</svg>
