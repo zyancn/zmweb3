@@ -18,6 +18,9 @@ dist-ssr
 .env.*
 !.env.example
 
+# 文档文件
+OP.docx
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
