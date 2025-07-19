@@ -15,7 +15,7 @@ const exchangeData = [
     title: 'Binance 币安交易所',
     description: '全球领先的加密货币交易所，提供多种数字资产交易服务',
     image: '/assets/biance.png',
-    link: 'https://www.binance.com/zh-CN/register?ref=YOUR_REF_CODE',
+    link: 'https://www.marketwebb.ninja/activity/referral-entry/CPA?ref=CPA_00EPKUBRBY',
     features: ['全球最大交易量', '丰富的币种选择', '安全可靠', '多样化的产品']
   },
   {
@@ -23,7 +23,7 @@ const exchangeData = [
     title: 'OKX 欧易交易所',
     description: '安全稳定的数字资产交易平台，支持多种加密货币交易',
     image: '/assets/okx.png',
-    link: 'https://www.okx.com/join/YOUR_REF_CODE',
+    link: 'https://oyicn.link/ul/YbU25D?channelId=7151751',
     features: ['用户体验优秀', '多元化产品', '安全防护', '全球化服务']
   }
 ];
@@ -35,7 +35,7 @@ const ucardData = [
     title: 'Bybit 虚拟信用卡',
     description: '全球知名交易所推出的虚拟信用卡，支持多种加密货币支付',
     image: mastercardCard,
-    link: 'https://www.bybit.com/zh-CN/register?affiliate_id=YOUR_CODE',
+    link: 'https://www.bybit.com/cards/?ref=ZV2202&source=applet_invite',
     features: ['无KYC', '全球支付', '多币种支持', '安全便捷']
   }
 ];

@@ -15,7 +15,7 @@ const ucards = [
     title: 'Bybit Card',
     description: 'Bybit交易所推出的虚拟信用卡，支持多种加密货币充值，全球消费。提供便捷的加密货币支付体验和丰厚的返现福利。',
     image: mastercardCard,
-    link: 'https://www.bybitglobal.com/cards/?ref=ZV2202&source=applet_invite',
+    link: 'https://www.bybit.com/cards/?ref=ZV2202&source=applet_invite',
     tags: ['U卡', '热门', 'MasterCard']
   },
   {
