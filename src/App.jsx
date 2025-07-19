@@ -10,6 +10,7 @@ import AirdropsPage from './pages/AirdropsPage'
 import AboutPage from './pages/AboutPage'
 import ArticlePage from './pages/ArticlePage'
 import ArticlesListPage from './pages/ArticlesListPage'
+import LifetimeServicePage from './pages/LifetimeServicePage'
 import NotFoundPage from './pages/NotFoundPage'
 import useScrollToTop from './hooks/useScrollToTop'
 import './App.css'
@@ -30,6 +31,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/articles" element={<ArticlesListPage />} />
             <Route path="/article/:id" element={<ArticlePage />} />
+            <Route path="/lifetime-service" element={<LifetimeServicePage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>

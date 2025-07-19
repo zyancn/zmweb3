@@ -20,6 +20,7 @@ const Header = () => {
             <li><Link to="/exchanges" onClick={handleLinkClick}>交易所</Link></li>
             <li><Link to="/ucards" onClick={handleLinkClick}>U卡推荐</Link></li>
             <li><Link to="/courses" onClick={handleLinkClick}>教程资料</Link></li>
+            <li><Link to="/lifetime-service" onClick={handleLinkClick}>终身技术服务</Link></li>
             <li><Link to="/articles" onClick={handleLinkClick}>文章</Link></li>
             <li><Link to="/about" onClick={handleLinkClick}>关于我们</Link></li>
           </ul>

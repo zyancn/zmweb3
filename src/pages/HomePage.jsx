@@ -6,7 +6,7 @@ import AlphaPanel from '../components/AlphaPanel';
 import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 
 // 导入U卡图片
-import bybitCard from '../assets/card/bybit.png';
+import mastercardCard from '../assets/card/mastercard.svg';
 
 // 交易所数据
 const exchangeData = [
@@ -34,7 +34,7 @@ const ucardData = [
     id: 1,
     title: 'Bybit 虚拟信用卡',
     description: '全球知名交易所推出的虚拟信用卡，支持多种加密货币支付',
-    image: bybitCard,
+    image: mastercardCard,
     link: 'https://www.bybit.com/zh-CN/register?affiliate_id=YOUR_CODE',
     features: ['无KYC', '全球支付', '多币种支持', '安全便捷']
   }
@@ -48,7 +48,6 @@ const courseData = [
     description: '从零开始学习区块链技术，掌握基础概念和应用场景',
     image: '/assets/blockchain-basics.svg',
     link: '/courses',
-    features: ['基础概念', '技术原理', '应用场景', '发展趋势']
   }
 ];
 
@@ -167,7 +166,13 @@ const HomePage = () => {
               {/* 交易所 */}
               {exchangeData.map(exchange => (
                 <div key={`exchange-${exchange.id}`} className="compact-card">
-                  <img src={exchange.image} alt={exchange.title} className="compact-image" />
+                  <div className="compact-image-container">
+                    <img 
+                      src={exchange.image} 
+                      alt={exchange.title} 
+                      className="compact-image" 
+                    />
+                  </div>
                   <div className="compact-content">
                     <h4>{exchange.title}</h4>
                     <a href={exchange.link} className="compact-button" target="_blank" rel="noopener noreferrer">
@@ -180,7 +185,9 @@ const HomePage = () => {
               {/* U卡 */}
               {ucardData.map(ucard => (
                 <div key={`ucard-${ucard.id}`} className="compact-card">
-                  <img src={ucard.image} alt={ucard.title} className="compact-image" />
+                  <div className="compact-image-container">
+                    <img src={ucard.image} alt={ucard.title} className="compact-image" />
+                  </div>
                   <div className="compact-content">
                     <h4>{ucard.title}</h4>
                     <a href={ucard.link} className="compact-button" target="_blank" rel="noopener noreferrer">
@@ -193,7 +200,9 @@ const HomePage = () => {
               {/* 区块链教程 */}
               {courseData.map(course => (
                 <div key={`course-${course.id}`} className="compact-card">
-                  <img src={course.image} alt={course.title} className="compact-image" />
+                  <div className="compact-image-container">
+                    <img src={course.image} alt={course.title} className="compact-image" />
+                  </div>
                   <div className="compact-content">
                     <h4>{course.title}</h4>
                     <Link to={course.link} className="compact-button">查看详情</Link>

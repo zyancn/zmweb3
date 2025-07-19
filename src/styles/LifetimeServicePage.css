@@ -1,0 +1,532 @@
+/* 终身技术服务页面样式 */
+
+.lifetime-service-page {
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* 英雄区域样式 */
+.service-hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 10%;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: white;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.service-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/assets/hero-pattern.svg');
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.service-hero-content {
+  flex: 1;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.service-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.service-hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.service-hero-image img {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.service-hero-image img:hover {
+  transform: scale(1.15);
+}
+
+.primary-button {
+  background: #fff;
+  color: #1a2a6c;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.primary-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background: #f8f8f8;
+}
+
+/* 服务概述区域 */
+.service-overview-section {
+  padding: 5rem 10%;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1a2a6c;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
+  border-radius: 2px;
+}
+
+.service-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-overview-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service-overview-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-overview-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1a2a6c;
+}
+
+.service-overview-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 详细服务内容区域 */
+.service-details-section {
+  padding: 5rem 10%;
+  background-color: #f9f9f9;
+}
+
+.service-details-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.service-details-header {
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.service-details-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-details-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.service-details-content {
+  padding: 2rem;
+}
+
+.service-feature {
+  margin-bottom: 2rem;
+}
+
+.service-feature:last-child {
+  margin-bottom: 0;
+}
+
+.service-feature h3 {
+  font-size: 1.5rem;
+  color: #1a2a6c;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.service-feature h3::before {
+  content: '✦';
+  margin-right: 0.75rem;
+  color: #b21f1f;
+}
+
+.service-feature p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.service-list {
+  padding-left: 2rem;
+  margin: 1rem 0;
+}
+
+.service-list li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.service-note {
+  font-style: italic;
+  color: #666;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 5px;
+  border-left: 3px solid #b21f1f;
+}
+
+/* 服务优势区域 */
+.service-benefits-section {
+  padding: 5rem 10%;
+  background-color: #fff;
+}
+
+.service-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.service-benefit-card {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  background: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-benefit-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #1a2a6c;
+}
+
+.service-benefit-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 用户见证区域 */
+.service-testimonials-section {
+  padding: 5rem 10%;
+  background-color: #f9f9f9;
+}
+
+.service-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-content {
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-content p {
+  font-style: italic;
+  color: #555;
+  line-height: 1.7;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.testimonial-content p::before,
+.testimonial-content p::after {
+  content: '"';
+  font-size: 2rem;
+  color: #b21f1f;
+  position: absolute;
+}
+
+.testimonial-content p::before {
+  left: 0;
+  top: -10px;
+}
+
+.testimonial-content p::after {
+  right: 0;
+  bottom: -20px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.author-info h4 {
+  margin: 0;
+  color: #1a2a6c;
+}
+
+.author-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* 常见问题区域 */
+.service-faq-section {
+  padding: 5rem 10%;
+  background-color: #fff;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.faq-item {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #1a2a6c;
+}
+
+.faq-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 行动召唤区域 */
+.service-cta-section {
+  padding: 5rem 10%;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+  color: white;
+  text-align: center;
+  border-radius: 50px 50px 0 0;
+  margin-top: 3rem;
+}
+
+.service-cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.service-cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-button {
+  background: #fff;
+  color: #1a2a6c;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background: #f8f8f8;
+}
+
+.cta-note {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .service-hero-section,
+  .service-overview-section,
+  .service-details-section,
+  .service-benefits-section,
+  .service-testimonials-section,
+  .service-faq-section,
+  .service-cta-section {
+    padding: 4rem 5%;
+  }
+  
+  .service-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .service-hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 5%;
+  }
+  
+  .service-hero-content {
+    margin-bottom: 2rem;
+  }
+  
+  .service-overview-grid,
+  .service-testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .service-overview-grid,
+  .service-testimonials-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-details-header {
+    padding: 1.5rem;
+  }
+  
+  .service-details-content {
+    padding: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
